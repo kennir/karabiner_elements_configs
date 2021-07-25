@@ -1,0 +1,61 @@
+{
+    "title": "Razer orochi v2 for iCal",
+    "rules": [
+        {
+            "description": "button_4 to iCal back",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "pointing_button": "button4"
+                    },
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com.apple.iCal"
+                            ]
+                        }
+                    ],
+                    "to": [
+                        {
+                            "repeat": false,
+                            "key_code": "left_arrow",
+                            "modifiers": [
+                                "left_gui"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "button_5 to iCal forward",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "pointing_button": "button5"
+                    },
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com.apple.iCal"
+                            ]
+                        }
+                    ],
+                    "to": [
+                        {
+                            "repeat": false,
+                            "key_code": "right_arrow",
+                            "modifiers": [
+                                "left_gui"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "title": "Razer orochi v2 for unity",
+    "rules": [
+        {
+            "description": "button_4 to unity reload",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "pointing_button": "button4"
+                    },
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com.unity3d.UnityEditor5.x"
+                            ]
+                        }
+                    ],
+                    "to": [
+                        {
+                            "repeat": false,
+                            "key_code": "r",
+                            "modifiers": [
+                                "left_gui"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

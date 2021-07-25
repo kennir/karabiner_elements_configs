@@ -1,0 +1,63 @@
+{
+    "title": "Razer orochi v2 for safari",
+    "rules": [
+        {
+            "description": "button_4 to safari back",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "pointing_button": "button4"
+                    },
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "description": "com.apple.Safari",
+                            "bundle_identifiers": [
+                                "com.apple.Safari"
+                            ]
+                        }
+                    ],
+                    "to": [
+                        {
+                            "repeat": false,
+                            "key_code": "open_bracket",
+                            "modifiers": [
+                                "left_gui"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "button_5 to safari forward",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "pointing_button": "button5"
+                    },
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "description": "Safari",
+                            "bundle_identifiers": [
+                                "com.apple.Safari"
+                            ]
+                        }
+                    ],
+                    "to": [
+                        {
+                            "repeat": false,
+                            "key_code": "close_bracket",
+                            "modifiers": [
+                                "left_gui"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

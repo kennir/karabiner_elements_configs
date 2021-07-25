@@ -1,0 +1,57 @@
+{
+    "title": "Razer orochi v2 for iTerm2",
+    "rules": [
+        {
+            "description": "button_4 to iterm2 previous command",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "pointing_button": "button4"
+                    },
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "description": "com.apple.Safari",
+                            "bundle_identifiers": [
+                                "com.googlecode.iterm2"
+                            ]
+                        }
+                    ],
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "up_arrow"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "button_5 iterm2 previous command",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "pointing_button": "button5"
+                    },
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "description": "com.apple.Safari",
+                            "bundle_identifiers": [
+                                "com.googlecode.iterm2"
+                            ]
+                        }
+                    ],
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "down_arrow"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
