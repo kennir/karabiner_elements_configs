@@ -1,8 +1,8 @@
 {
-    "title": "Razer orochi v2 for safari",
+    "title": "Razer orochi v2 for common navigate",
     "rules": [
         {
-            "description": "button_4 to safari back",
+            "description": "button_4 to navigate back",
             "manipulators": [
                 {
                     "type": "basic",
@@ -12,7 +12,6 @@
                     "conditions": [
                         {
                             "type": "frontmost_application_if",
-                            "description": "com.apple.Safari",
                             "bundle_identifiers": [
                                 "com.apple.Safari"
                             ]
@@ -31,7 +30,7 @@
             ]
         },
         {
-            "description": "button_5 to safari forward",
+            "description": "button_5 to navigate forward",
             "manipulators": [
                 {
                     "type": "basic",
@@ -41,7 +40,6 @@
                     "conditions": [
                         {
                             "type": "frontmost_application_if",
-                            "description": "Safari",
                             "bundle_identifiers": [
                                 "com.apple.Safari"
                             ]
