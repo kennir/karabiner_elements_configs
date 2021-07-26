@@ -17,6 +17,14 @@
                                 "left_gui"
                             ]
                         }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "com.microsoft.VSCode"
+                            ]
+                        }
                     ]
                 },
                 {
@@ -32,6 +40,14 @@
                                 "left_gui"
                             ]
                         }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "com.microsoft.VSCode"
+                            ]
+                        }
                     ]
                 }
             ]
@@ -45,10 +61,9 @@
                         "pointing_button": "button4",
                         "modifiers": {
                             "mandatory": [
-                              "left_control"
+                                "left_control"
                             ]
-                          }
-                        
+                        }
                     },
                     "to": [
                         {
@@ -65,11 +80,11 @@
                     "from": {
                         "pointing_button": "button5",
                         "modifiers": {
-                          "mandatory": [
-                            "left_control"
-                          ]
+                            "mandatory": [
+                                "left_control"
+                            ]
                         }
-                      },
+                    },
                     "to": [
                         {
                             "repeat": false,
