@@ -7,7 +7,12 @@
                 {
                     "type": "basic",
                     "from": {
-                        "pointing_button": "button4"
+                        "pointing_button": "button4",
+                        "modifiers": {
+                            "mandatory": [
+                              "left_gui"
+                            ]
+                          }
                     },
                     "conditions": [
                         {
