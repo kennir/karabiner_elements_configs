@@ -2,7 +2,7 @@
   "title": "Spotlight",
   "rules": [
     {
-      "description": "Double tap right shift to spotlight | 双击 右shift 弹出 Spotlight",
+      "description": "Double tap right shift to spotlight | 双击 右shift 弹出 Spotlight 并且切换到英文",
       "manipulators": [
         {
           "type": "basic",
@@ -15,6 +15,11 @@
           "to": [
             {
               "key_code": "f17"
+            },
+            {
+              "select_input_source": {
+                "language": "en"
+              }
             }
           ],
           "conditions": [
@@ -83,6 +88,11 @@
             "to": [
               {
                 "key_code": "f17"
+              },
+              {
+                "select_input_source": {
+                  "language": "en"
+                }
               }
             ],
             "type": "basic"
