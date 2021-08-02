@@ -1,0 +1,149 @@
+{
+  "title": "Open Application",
+  "rules": [
+    {
+      "description": "Hyper+T to Open iTerm2",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_control",
+                "left_shift",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'iTerm'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Hyper+V to Open vscode",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_control",
+                "left_shift",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'visual studio code'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Hyper+S to Open safari",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_control",
+                "left_shift",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'safari'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Hyper+Y to Open 网易有道词典",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_control",
+                "left_shift",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a '网易有道词典'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Hyper+R to Open source tree",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_control",
+                "left_shift",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Sourcetree'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+        "description": "Hyper+W to Open WeChat",
+        "manipulators": [
+          {
+            "from": {
+              "key_code": "w",
+              "modifiers": {
+                "mandatory": [
+                  "left_command",
+                  "left_control",
+                  "left_shift",
+                  "left_option"
+                ]
+              }
+            },
+            "to": [
+              {
+                "shell_command": "open -a 'WeChat'"
+              }
+            ],
+            "type": "basic"
+          }
+        ]
+      }
+  ]
+}

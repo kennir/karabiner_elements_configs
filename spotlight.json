@@ -1,76 +1,93 @@
-
 {
-    "title": "Spotlight",
-    "rules": [
+  "title": "Spotlight",
+  "rules": [
+    {
+      "description": "Double tap right shift to spotlight | 双击 右shift 弹出 Spotlight",
+      "manipulators": [
         {
-            "description": "Double tap right shift to spotlight | 双击 右CMD 弹出 Spotlight",
-            "manipulators": [
+          "type": "basic",
+          "from": {
+            "key_code": "right_shift",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f17"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "right_shift pressed",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_shift",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "right_shift pressed",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "right_shift"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
               {
-                "type": "basic",
-                "from": {
-                  "key_code": "right_shift",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "f17"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "right_shift pressed",
-                    "value": 1
-                  }
-                ]
-              },
+                "set_variable": {
+                  "name": "right_shift pressed",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
               {
-                "type": "basic",
-                "from": {
-                  "key_code": "right_shift",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "set_variable": {
-                      "name": "right_shift pressed",
-                      "value": 1
-                    }
-                  },
-                  {
-                    "key_code": "right_shift"
-                  }
-                ],
-                "to_delayed_action": {
-                  "to_if_invoked": [
-                    {
-                      "set_variable": {
-                        "name": "right_shift pressed",
-                        "value": 0
-                      }
-                    }
-                  ],
-                  "to_if_canceled": [
-                    {
-                      "set_variable": {
-                        "name": "right_shift pressed",
-                        "value": 0
-                      }
-                    }
-                  ]
+                "set_variable": {
+                  "name": "right_shift pressed",
+                  "value": 0
                 }
               }
             ]
           }
-    ]
-  }
-
-
+        }
+      ]
+    },
+    {
+        "description": "Command_L (⌘) + Space → Spotlight (F18)  |  左 Command (⌘) + 空格 → 聚焦搜索",
+        "manipulators": [
+          {
+            "from": {
+              "key_code": "spacebar",
+              "modifiers": {
+                "mandatory": [
+                  "left_command"
+                ],
+                "optional": [
+                  "left_option"
+                ]
+              }
+            },
+            "to": [
+              {
+                "key_code": "f17"
+              }
+            ],
+            "type": "basic"
+          }
+        ]
+      }
+  ]
+}

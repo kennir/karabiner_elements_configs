@@ -191,6 +191,32 @@
         ]
       },
       {
+        "description": "Tap Caps → Switch input source (F18)  |  短按大写锁定键 → 切换输入法",
+        "manipulators": [
+          {
+            "from": {
+              "key_code": "caps_lock"
+            },
+            "to": [
+              {
+                "key_code": "caps_lock"
+              }
+            ],
+            "to_if_alone": [
+              {
+                "key_code": "f18"
+              }
+            ],
+            "to_if_held_down": [
+              {
+                "key_code": "caps_lock"
+              }
+            ],
+            "type": "basic"
+          }
+        ]
+      },
+      {
         "description": "Tap Shift_R (⇧) → Switch input source (F18)  |  短按右 Shift (⇧) → 切换输入法",
         "manipulators": [
           {
