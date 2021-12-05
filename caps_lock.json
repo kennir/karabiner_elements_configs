@@ -25,6 +25,30 @@
           ]
         }
       ]
+    },
+    {
+      "description": "held down opt key = capslock",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code":    "caps_lock"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
