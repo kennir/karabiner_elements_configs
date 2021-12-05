@@ -2,7 +2,7 @@
   "title": "CapsLock to Hyper",
   "rules": [
     {
-      "description": "capslock = switch ime(click) | hyper(hold)",
+      "description": "CapsLock = switch ime(click) | hyper(hold)",
       "manipulators": [
         {
           "type": "basic",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "description": "held down opt key = capslock",
+      "description": "double tap left_alt key = CapsLock",
       "manipulators": [
         {
           "type": "basic",
@@ -39,15 +39,55 @@
           },
           "to": [
             {
-              "key_code": "left_alt"
+              "key_code": "caps_lock"
             }
           ],
-          "to_if_held_down": [
+          "conditions": [
             {
-              "key_code":    "caps_lock"
+              "type": "variable_if",
+              "name": "left_alt pressed",
+              "value": 1
             }
           ]
-        }
+        },
+        {
+          "type": "basic",
+          "from": {
+              "key_code": "left_alt",
+              "modifiers": {
+                  "optional": ["any"]
+              }
+          },
+          "to": [
+              {
+                  "set_variable": {
+                      "name": "left_alt pressed",
+                      "value": 1
+                  }
+              },
+              {
+                  "key_code": "left_alt"
+              }
+          ],
+          "to_delayed_action": {
+              "to_if_invoked": [
+                  {
+                      "set_variable": {
+                          "name": "left_alt pressed",
+                          "value": 0
+                      }
+                  }
+              ],
+              "to_if_canceled": [
+                  {
+                      "set_variable": {
+                          "name": "left_alt pressed",
+                          "value": 0
+                      }
+                  }
+              ]
+          }
+      }
       ]
     }
   ]
