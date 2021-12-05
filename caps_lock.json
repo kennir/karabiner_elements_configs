@@ -40,6 +40,11 @@
           "to": [
             {
               "key_code": "caps_lock"
+            },
+            {
+              "select_input_source": {
+                "language": "en"
+              }
             }
           ],
           "conditions": [
