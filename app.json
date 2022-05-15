@@ -170,11 +170,11 @@
       ]
     },
     {
-      "description": "Hyper+K to Open Kitty",
+      "description": "Hyper+I to Open iTerm2",
       "manipulators": [
         {
           "from": {
-            "key_code": "k",
+            "key_code": "i",
             "modifiers": {
               "mandatory": [
                 "left_command",
@@ -186,7 +186,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Kitty'"
+              "shell_command": "open -a 'iterm'"
             }
           ],
           "type": "basic"
