@@ -1,0 +1,51 @@
+{
+  "title": "Razer orochi v2 for reeder",
+  "rules": [
+    {
+      "description": "button_4 to reeder next item",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button4"
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["com.reederapp.5.macOS"]
+            }
+          ],
+          "to": [
+            {
+              "repeat": false,
+              "key_code": "j"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "button_5 to reeder preview item",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button5"
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["com.reederapp.5.macOS"]
+            }
+          ],
+          "to": [
+            {
+              "repeat": false,
+              "key_code": "k"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
