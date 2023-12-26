@@ -2,11 +2,11 @@
   "title": "Open Application",
   "rules": [
     {
-      "description": "Hyper+T to Open iTerm2",
+      "description": "Hyper+1 to Open finder",
       "manipulators": [
         {
           "from": {
-            "key_code": "t",
+            "key_code": "1",
             "modifiers": {
               "mandatory": [
                 "left_command",
@@ -18,7 +18,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'iTerm'"
+              "shell_command": "open -a 'finder'"
             }
           ],
           "type": "basic"
@@ -26,35 +26,11 @@
       ]
     },
     {
-      "description": "Hyper+V to Open vscode",
+      "description": "Hyper+2 to Open safari",
       "manipulators": [
         {
           "from": {
-            "key_code": "v",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "left_control",
-                "left_shift",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'visual studio code'"
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Hyper+S to Open safari",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "s",
+            "key_code": "2",
             "modifiers": {
               "mandatory": [
                 "left_command",
@@ -74,83 +50,11 @@
       ]
     },
     {
-      "description": "Hyper+Y to Open 网易有道词典",
+      "description": "Hyper+3 to Open Notes",
       "manipulators": [
         {
           "from": {
-            "key_code": "y",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "left_control",
-                "left_shift",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a '网易有道词典'"
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Hyper+R to Open source tree",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "r",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "left_control",
-                "left_shift",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Sourcetree'"
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Hyper+W to Open WeChat",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "left_control",
-                "left_shift",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'WeChat'"
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Hyper+N to Open Notes",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "n",
+            "key_code": "3",
             "modifiers": {
               "mandatory": [
                 "left_command",
@@ -170,11 +74,11 @@
       ]
     },
     {
-      "description": "Hyper+I to Open iTerm2",
+      "description": "Hyper+4 to Open NetNewsWire",
       "manipulators": [
         {
           "from": {
-            "key_code": "i",
+            "key_code": "4",
             "modifiers": {
               "mandatory": [
                 "left_command",
@@ -186,7 +90,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'iterm'"
+              "shell_command": "open -a 'NetNewsWire'"
             }
           ],
           "type": "basic"
@@ -194,11 +98,11 @@
       ]
     },
     {
-      "description": "Hyper+F to Open Forklift",
+      "description": "Hyper+Q to Open 飞书",
       "manipulators": [
         {
           "from": {
-            "key_code": "f",
+            "key_code": "q",
             "modifiers": {
               "mandatory": [
                 "left_command",
@@ -210,7 +114,79 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'forklift'"
+              "shell_command": "open -a 'Feishu'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Hyper+W to Open Wechat",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_control",
+                "left_shift",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Wechat'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Hyper+E to Open Messages",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_control",
+                "left_shift",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Messages'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Hyper+R to Open QQ",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_control",
+                "left_shift",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'QQ'"
             }
           ],
           "type": "basic"
